@@ -141,11 +141,11 @@ export default function Home() {
 function Bar({ label, value }) {
 
   const safeValue = Number(value || 0);
-
+  
   return (
     <div>
 
-      <div className="flex justify-between text-purple-500 mb-1 text-sm">
+      <div className="flex justify-between mb-1 text-sm text-purple-500">
         <span>{label}</span>
         <span>{safeValue.toFixed(0)}%</span>
       </div>
