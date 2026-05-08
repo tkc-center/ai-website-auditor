@@ -18,6 +18,12 @@ export default function Home() {
         ? url
         : `https://${url}`;
 
+      if (!url.trim()) {
+        alert("Please enter a URL");
+        setLoading(false);
+        return;
+        }
+
       const res = await fetch("/api/analyze", {
         method: "POST",
         headers: {
@@ -86,7 +92,7 @@ export default function Home() {
         </h1>
 
         <input
-          type="text "
+          type="text"
           placeholder="https://example.com"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
@@ -95,6 +101,7 @@ export default function Home() {
 
         <button
           onClick={analyzeWebsite}
+          disabled={loading}
           className="w-full bg-black text-white p-3 rounded-lg"
         >
           Analyzieren
