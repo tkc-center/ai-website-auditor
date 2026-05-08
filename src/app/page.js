@@ -121,7 +121,7 @@ export default function Home() {
           <div className="mt-6 space-y-4">
 
             <h2 className="text-2xl font-bold text-center text-purple-500">
-              Overall Score: {score.final.toFixed(0)}%
+              Gesamtpunktzahl: {score.final.toFixed(0)}%
             </h2>
 
             <Bar label="Performance" value={score.perf} />
