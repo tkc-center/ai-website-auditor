@@ -19,7 +19,7 @@ export default function Home() {
         : `https://${url}`;
 
       if (!url.trim()) {
-        alert("Please enter a URL");
+        alert("Bitte geben Sie eine URL ein.");
         setLoading(false);
         return;
         }
@@ -64,10 +64,10 @@ export default function Home() {
 
       setScore({
         final: finalScore,
-        perf: perf * 100,
-        seo: seo * 100,
-        a11y: a11y * 100,
-        best: best * 100,
+        perf: Number(perf || 0) * 100,
+        seo: Number(seo || 0) * 100,
+        a11y: Number(a11y || 0) * 100,
+        best: Number(best || 0) * 100,
       });
 
       setLoading(false);
@@ -144,7 +144,7 @@ function Bar({ label, value }) {
 
       <div className="flex justify-between mb-1 text-sm text-purple-500">
         <span>{label}</span>
-        <span>{value.toFixed(0)}%</span>
+        <span>{Number(value || 0).toFixed(0)}%</span>
       </div>
 
       <div className="w-full bg-gray-200 rounded-full h-3">
