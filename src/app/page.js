@@ -72,7 +72,7 @@ export default function Home() {
 
       setLoading(false);
 
-      alert("Something went wrong");
+      alert("Etwas ist schiefgelaufen");
     }
   };
 
@@ -102,7 +102,7 @@ export default function Home() {
 
         {loading && (
           <p className="text-center text-red-500 mt-6">
-            Analyzing website...
+            Website wird analysiert...
           </p>
         )}
 
