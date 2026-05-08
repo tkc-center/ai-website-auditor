@@ -139,6 +139,9 @@ export default function Home() {
 }
 
 function Bar({ label, value }) {
+
+  const safeValue = Number(value || 0);
+  
   return (
     <div>
 
