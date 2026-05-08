@@ -9,7 +9,7 @@ export async function POST(req) {
       process.env.GOOGLE_API_KEY;
 
     const apiUrl =
-      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=${apiKey}`;
+      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=${apiKey}&category=performance&category=seo&category=accessibility&category=best-practices`;
 
     const response = await fetch(apiUrl);
 
