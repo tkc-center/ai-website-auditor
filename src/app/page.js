@@ -86,11 +86,11 @@ export default function Home() {
         </h1>
 
         <input
-          type="text-purple-500 text "
+          type="text "
           placeholder="https://example.com"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          className="w-full border p-3 rounded-lg mb-4"
+          className="w-full border  p-3 rounded-lg mb-4 text-purple-500"
         />
 
         <button
@@ -109,7 +109,7 @@ export default function Home() {
         {score && (
           <div className="mt-6 space-y-4">
 
-            <h2 className="text-2xl font-bold text-center text-red">
+            <h2 className="text-2xl font-bold text-center text-purple-500">
               Overall Score: {score.final.toFixed(0)}%
             </h2>
 
@@ -131,7 +131,7 @@ function Bar({ label, value }) {
   return (
     <div>
 
-      <div className="flex justify-between mb-1 text-sm">
+      <div className="flex justify-between mb-1 text-sm text-purple-500">
         <span>{label}</span>
         <span>{value.toFixed(0)}%</span>
       </div>
