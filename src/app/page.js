@@ -141,27 +141,27 @@ export default function Home() {
 function Bar({ label, value }) {
 
   const safeValue = Number(value || 0);
-  
+
   return (
     <div>
 
-      <div className="flex justify-between mb-1 text-sm text-purple-500">
+      <div className="flex justify-between mb-1 text-sm">
         <span>{label}</span>
-        <span>{Number(value || 0).toFixed(0)}%</span>
+        <span>{safeValue.toFixed(0)}%</span>
       </div>
 
       <div className="w-full bg-gray-200 rounded-full h-3">
 
         <div
           className={`h-3 rounded-full ${
-            value > 80
+            safeValue > 80
               ? "bg-green-500"
-              : value > 50
+              : safeValue > 50
               ? "bg-yellow-500"
               : "bg-red-500"
           }`}
           style={{
-            width: `${value}%`,
+            width: `${safeValue}%`,
           }}
         />
 
