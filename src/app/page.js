@@ -102,7 +102,11 @@ export default function Home() {
         <button
           onClick={analyzeWebsite}
           disabled={loading}
-          className="w-full bg-black text-white p-3 rounded-lg"
+          className={`w-full p-3 rounded-lg text-white ${
+            loading
+            ? "bg-gray-400"
+            : "bg-black"
+        }`}
         >
           Analyzieren
         </button>
