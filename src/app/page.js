@@ -126,8 +126,8 @@ export default function Home() {
 
             <Bar label="Performance" value={score.perf} />
             <Bar label="SEO" value={score.seo} />
-            <Bar label="Accessibility" value={score.a11y} />
-            <Bar label="Best Practices" value={score.best} />
+            <Bar label="Zugänglichkeit" value={score.a11y} />
+            <Bar label="Bewährte Verfahren" value={score.best} />
 
           </div>
         )}
