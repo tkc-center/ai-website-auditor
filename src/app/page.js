@@ -83,7 +83,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+    <main className="relative overflow-hidden min-h-screen flex items-center justify-center p-6">
 
       <div className="relative z-10 w-full max-w-xl p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
 
