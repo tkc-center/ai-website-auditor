@@ -85,10 +85,18 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden min-h-screen flex items-center justify-center p-6">
 
+      <div className="absolute top-0 left-0 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" />
+
+      <div className="absolute top-0 right-0 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000" />
+
+      <div className="absolute bottom-0 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000" />
+
       <div className="relative z-10 w-full max-w-xl p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
 
-        <h1 className="text-3xl font-bold text-red-500 text-center mb-6">
+        <h1 className="text-4xl font-extrabold text-white text-center mb-6 tracking-wide">
+
           KI WEBSITE AUDITOR
+
         </h1>
 
         <input
@@ -102,7 +110,8 @@ export default function Home() {
         <button
           onClick={analyzeWebsite}
           disabled={loading}
-          className={`w-full p-3 rounded-lg text-white ${
+          className={`w-full p-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 
+            text-white font-bold hover:scale-105 transition duration-300 ${
             loading
             ? "bg-gray-400"
             : "bg-black"
@@ -112,7 +121,7 @@ export default function Home() {
         </button>
 
         {loading && (
-          <p className="text-center text-red-500 mt-6">
+          <p className="text-center text-white mt-6">
             Website wird analysiert...
           </p>
         )}
@@ -120,7 +129,7 @@ export default function Home() {
         {score && (
           <div className="mt-6 space-y-4">
 
-            <h2 className="text-2xl font-bold text-center text-purple-500">
+            <h2 className="text-2xl font-bold text-center text-red">
               Gesamtpunktzahl: {score.final.toFixed(0)}%
             </h2>
 
