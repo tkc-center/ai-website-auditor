@@ -104,7 +104,7 @@ export default function Home() {
           placeholder="https://example.com"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          className="w-full border  p-3 rounded-lg mb-4 text-purple-500"
+          className="w-full border  p-3 rounded-lg mb-4 text-white"
         />
 
         <button
