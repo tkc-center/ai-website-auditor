@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
 
-      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-xl">
+      <div className="relative z-10 w-full max-w-xl p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
 
         <h1 className="text-3xl font-bold text-red-500 text-center mb-6">
           KI WEBSITE AUDITOR
