@@ -154,7 +154,7 @@ function Bar({ label, value }) {
   return (
     <div>
 
-      <div className="flex justify-between mb-1 text-sm">
+      <div className="flex justify-between mb-1 text-sm text-white">
         <span>{label}</span>
         <span>{safeValue.toFixed(0)}%</span>
       </div>
