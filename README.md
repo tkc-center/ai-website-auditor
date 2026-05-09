@@ -3,7 +3,7 @@
 
 
 
-# AI Website Auditor
+# KI Website Auditor
 
 Ein modernes Tool für SEO- und Performance-Audits, entwickelt mit Next.js und der Google PageSpeed ​​API.
 
